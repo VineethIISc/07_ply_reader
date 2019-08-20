@@ -179,7 +179,7 @@ void PLYreader::readBINARYply(std::ifstream& input)
 	for (unsigned int i = 0; i < numberOfTriangles; i++)
 	{
 		//read the start value
-		unsigned char start;
+		unsigned int start;
 		input.read((char*)&start, PLY_FACE_START_NUM_SIZE);
 
 		//read the faces: in term of indices
