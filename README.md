@@ -1,10 +1,12 @@
 # 07_ply_reader
 
 
-Render the .ply model:
+Render the .ply model using glDrawElements:
   1) PLYreader class read binary and ascii format
   2) Did manual scaling in vertex shader like in stl reader project
   3) Picture show rendering of ply model of table
+ 
+  
   
 Output Image:
 ![](images/output2.png)
