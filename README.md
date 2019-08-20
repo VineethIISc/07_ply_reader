@@ -7,7 +7,7 @@ Render the .ply model:
   3) Picture show rendering of ply model of table
   
 Output Image:
-![](images/output.png)
+![](images/output2.png)
 
 References:
 1)Greg Turk
