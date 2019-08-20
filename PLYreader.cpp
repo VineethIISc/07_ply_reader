@@ -135,7 +135,7 @@ void PLYreader::readASCIIply(std::ifstream& input)
 	for (unsigned int i = 0; i < numberOfTriangles; i++)
 	{
 		//read the first number in each face
-		unsigned char start;
+		unsigned int start;
 		input >> start;
 
 		//check if it is 3 for triangle
@@ -179,7 +179,7 @@ void PLYreader::readBINARYply(std::ifstream& input)
 	for (unsigned int i = 0; i < numberOfTriangles; i++)
 	{
 		//read the start value
-		unsigned int start;
+		unsigned char start;
 		input.read((char*)&start, PLY_FACE_START_NUM_SIZE);
 
 		//read the faces: in term of indices
