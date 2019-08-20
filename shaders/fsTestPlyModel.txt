@@ -1,0 +1,11 @@
+#version 330 core
+
+in vec4 inColor;
+out vec4 Frag_color;
+
+void main()
+{
+	float c = gl_FragCoord.z;		//depth value of fragment
+	Frag_color = vec4(c, c, c, 1.0);
+	//Frag_color = inColor;
+}

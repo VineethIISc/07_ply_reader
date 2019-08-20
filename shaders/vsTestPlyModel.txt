@@ -1,0 +1,12 @@
+#version 330 core
+
+layout(location = 0) in vec3 position;
+//out vec4 inColor;
+
+void main()
+{
+		float scale = 0.01;
+		vec3 modifiedPos = position * vec3(scale, scale, scale);
+		gl_Position = vec4(modifiedPos, 1.0);
+		//inColor = gl_Position;
+}
